@@ -17,4 +17,7 @@ class AddMember:
         self._driver.find_element(By.XPATH,'//form/div[3]/a[2]').click()
         sleep(5)
         return True
+    def get_member(self):
+        members = self._driver.find_elements(By.CSS_SELECTOR,'.member_colRight_memberTable_td:nth-child(2)')
+        return [member.get_attribute('title') for member in members]
 

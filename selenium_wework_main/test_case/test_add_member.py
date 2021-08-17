@@ -6,7 +6,8 @@ class TestAddMember:
         self.main = Main()
 
     def test_add_member(self):
-        assert self.main.goto_add_member().add_member()
-
+        add_member = self.main.goto_add_member()
+        add_member.add_member()
+        assert 'shixing' in add_member.get_member()
 
 
