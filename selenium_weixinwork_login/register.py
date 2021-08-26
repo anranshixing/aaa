@@ -5,7 +5,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-
+#注册页po
 class Register:
     def __init__(self,driver: WebDriver):
         self._driver = driver
