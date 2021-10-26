@@ -54,12 +54,12 @@
   - get_log:获取log的封装类，导入log变量，即可通过log.info(msg)获取文件和屏幕的日志
   - config.py：读取配置文件的封装类，导入cf变量，即可通过cf.get(section,option)获取value
   - mysql.py，连接和操作数据库，导入sql变量，
-  - 即可通过sql.select(query)、sql.insert(query)、sql.delete(query)，对数据库进行增删查
+     - 即可通过sql.select(query)、sql.insert(query)、sql.delete(query)，对数据库进行增删查
 #### test_case
   - 作用：作为pytest架构的测试类
   - 每个文件夹的文件
-  - conftest.py：为每个用例添加不同的前后置步骤，并获取对应的token值，供用例使用
-  - test_xxxx.py：测试用例
+    - conftest.py：为每个用例添加不同的前后置步骤，并获取对应的token值，供用例使用
+    - test_xxxx.py：测试用例
 #### data
 - 作用：存放api请求的数据和参数化的数据
 - 每个文件夹的文件
